@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0 auto;
+            background: #e8e8e8;
+        }
+        header{
+            width: 10rem;
+            height: 1rem;
+            border: 1px solid #c8c8c8;
+            text-align: center;
+            background: #fff;
+            margin: 0 auto;
+        }
+        header span{
+            text-align: center;
+            line-height: 1rem;
+            font-size: 18px;
+        }
+        [data-dpr="2"] header span{
+            font-size: 36px;
+        }
+        [data-dpr="3"] header span{
+            font-size: 50px;
+        }
+        .main{
+            width: 10rem;
+            height: 2rem;
+            margin: 0.5rem auto;
+        }
+        p{
+            width: 10rem;
+            height: 1rem;
+            background: #fff;
+            border: 1px solid #c8c8c8;
+        }
+        p span{
+            font-size: 18px;
+            line-height: 1rem;
+            padding-left: 10px;
+            width: 3rem;
+            float: left;
+            text-align: left;
+        }
+        [data-dpr="2"] p span{
+            font-size: 29px;
+        }
+        [data-dpr="3"] p span{
+            font-size: 45px;
+        }
+        p input{
+            width: 6.8rem;
+            height: 0.8rem;
+            border: 0;
+            margin-top: 0.1rem;
+            float: left;
+        }
+        .foot p{
+            width: 9rem;
+            height: 1rem;
+            margin: 0 auto;
+        }
+        .foot p input{
+            width: 9rem;
+            height: 1rem;
+            margin: 0 auto;
+            float: left;
+            background: #ff0036;
+            color: #fff;
+            font-size: 24px;
+        }
+        [data-dpr="2"] .foot p input{
+            font-size: 40px;
+        }
+        [data-dpr="3"] .foot p input{
+            font-size: 56px;
+        }
+        .foot p.p{
+            width: 10rem;
+            height: 1rem;
+            margin: 0 auto;
+            background: 0;
+            border: 0;
+        }
+        .foot p.p a{
+            width: 5rem;
+            height: 1rem;
+            float: left;
+            color: #ff0036;
+            padding-left: 0.5rem;
+            font-size: 18px;
+            line-height: 1rem;
+            text-decoration: none;
+        }
+        [data-dpr="2"] .foot p.p a{
+             font-size: 32px;
+         }
+        [data-dpr="3"] .foot p.p a{
+            font-size: 45px;
+        }
+        .foot p.p span{
+            text-align: right;
+            width: 5rem;
+            color: #ff0036;
+            padding-right: 0.5rem;
+            font-size: 18px;
+        }
+        [data-dpr="2"] .foot p.p span{
+            font-size: 32px;
+        }
+        .foot p:nth-of-type(3){
+            width: 10rem;
+            height: 1rem;
+            margin: 0 auto;
+            text-align: center;
+            border: 0;
+            padding-top: 1rem;
+        }
+        .foot p:nth-of-type(3) a{
+            text-decoration: none;
+            color: #ff0036;
+            width: 4rem;
+            height: 1rem;
+            border: 1px solid #ff0036;
+            font-size: 20px;
+            display: block;
+            margin: 0 auto;
+            line-height: 1rem;
+        }
+        [data-dpr="2"] .foot p:nth-of-type(3) a{
+            font-size: 32px;
+        }
+        [data-dpr="3"] .foot p:nth-of-type(3) a{
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+<header><span>账户登录</span></header>
+<div class="main">
+    <p><span>账户：</span><input type="text" placeholder="手机号/邮箱/会员名"></p>
+    <p><span>登录密码：</span><input type="text" placeholder="请输入密码"></p>
+</div>
+<div class="foot">
+    <p><input type="submit" value="登录"></p>
+    <p class="p"><a href="zhu.html">免费注册</a><span>忘记密码</span></p>
+    <p><a href="javascript:;">短信校验码登录</a></p>
+</div>
+</body>
+</html>

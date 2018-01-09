@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 10rem;
+            height: 1rem;
+            background: #e6e6e6;
+            margin: 0 auto;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        header span{
+            font-size: 24px;
+            line-height: 1rem;
+            color: #363636;
+            margin-left: -1.2rem;
+        }
+        [data-dpr="2"] header span{
+            font-size: 39px;
+        }
+        [data-dpr="3"] header span{
+            font-size: 50px;
+        }
+        header a{
+            width: 1.2rem;
+            height: 0.8rem;
+            border: 1px solid #666666;
+            float: left;
+            font-size: 16px;
+            text-align: center;
+            line-height: 0.8rem;
+            color: #999;
+            border-radius: 3px;
+            margin-top: 0.05rem;
+            margin-left: 0.2rem;
+        }
+        [data-dpr="2"] header a{
+            font-size: 39px;
+        }
+        [data-dpr="3"] header a{
+            font-size: 56px;
+        }
+        p{
+            width: 9.8rem;
+            height: 1rem;
+            font-size: 16px;
+            color: #222;
+            background:#e6e6e6 ;
+            line-height: 1rem;
+            padding-left: 0.2rem;
+            margin: 0 auto;
+        }
+        [data-dpr="2"] p{
+            font-size: 32px;
+        }
+        [data-dpr="3"] p{
+            font-size: 56px;
+        }
+        .main{
+            width: 10rem;
+            height: 2rem;
+            background: #fff;
+            margin: 0 auto;
+        }
+        .main p{
+            width:9rem;
+            height: 1rem;
+            background: #fff;
+            border-bottom: 1px solid #c8c8c8;
+        }
+        .main p span{
+            font-size: 18px;
+            line-height: 1rem;
+            padding-left: 10px;
+            width: 3rem;
+            float: left;
+            text-align: left;
+        }
+        [data-dpr="2"] .main p span{
+            font-size: 35px;
+        }
+        [data-dpr="3"] .main p span{
+            font-size: 50px;
+        }
+        .main p input{
+            width: 5.5rem;
+            height: 0.8rem;
+            border: 0;
+            margin-top: 0.1rem;
+            float: left;
+        }
+        .foot{
+            width: 10rem;
+            height: 2rem;
+            text-align: center;
+            line-height: 2rem;
+            margin: 0 auto;
+        }
+        .foot input{
+            width: 3rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: center;
+            font-size: 18px;
+            float: left;
+            margin-top: 0.5rem;
+        }
+        [data-dpr="2"] .foot input{
+            font-size: 39px;
+        }
+        [data-dpr="3"] .foot input{
+            font-size: 56px;
+        }
+        .bottom{
+            color: #666666;
+            width: 10rem;
+            height: 2rem;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+        [data-dpr="2"] .bottom{
+            font-size: 26px;
+        }
+        [data-dpr="3"] .bottom{
+            font-size: 39px;
+        }
+        .bottom a{
+            color: #f40;
+        }
+        .bottom p{
+            background: 0;
+            font-size: 14px;
+            color: #666;
+            width: 10rem;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0;
+            float: left;
+        }
+        [data-dpr="2"] .bottom p{
+            font-size: 26px;
+        }
+        [data-dpr="3"] .bottom p{
+            font-size: 39px;
+        }
+        .bottom span{
+            width: 9rem;
+            margin: 0 auto;
+            float: left;
+            padding-left: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+<header><span>注册</span><a href="deng.html">返回</a></header>
+<p>为了你的账户安全请填写一个手机号完成验证</p>
+<div class="main">
+    <p><span>国家/地区</span><input type="text" placeholder="中国大陆（+86）"></p>
+    <p><span>手机号</span><input type="text"></p>
+</div>
+<div class="foot"><input type="submit" value="发送验证码">
+</div>
+<div class="bottom">
+    <span> 继续操作即视为同意<a href="">品海平台服务协议</a>、<a href="">法律声明及隐私权政策</a>和
+    <a href="">支付宝协议</a></span>
+
+    <p>系统将同步将你创建支付宝账号</p>
+</div>
+</body>
+</html>
