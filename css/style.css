@@ -526,6 +526,7 @@ header .head .fangdajing i{
     /*opacity: 0;*/
     display: none;
     top: 1rem;
+    z-index: 6;
 }
 #main7 ul li{
     width: 2.5rem;
