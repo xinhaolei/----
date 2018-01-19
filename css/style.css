@@ -523,7 +523,8 @@ header .head .fangdajing i{
     background: #fff;
     position: absolute;
     z-index: 9;
-    opacity: 0;
+    /*opacity: 0;*/
+    display: none;
     top: 1rem;
 }
 #main7 ul li{

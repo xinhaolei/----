@@ -16,7 +16,7 @@
     <li  onclick="li2()" id="l2"><a href="javascript:;">当季女鞋</a></li>
     <li  onclick="li3()" id="l3"><a href="javascript:;">品牌男装</a></li>
     <li onclick="li4()" id="l4"><a href="javascript:;">家居百货</a></li>
-    <li onclick="show()"><a href="javascript:;"><img src="img/0.png"> </a></li></ul>
+    <li class="flip"><a href="javascript:;"><img src="img/0.png"> </a></li></ul>
 </header>
 <div id="main7">
     <ul>
@@ -194,38 +194,44 @@
 <script src="js/jquery-1.11.1.min.js"></script>
 <script>
 //        $("#hide").click(function(){
-//            $("#main7").style.opacity=0;
+//            $("#main7").style.display="block";
 //        });
-        function show(){
-            document.getElementById("main7").style.opacity="1";
-        }
+$(document).ready(function(){
+    $(".flip").click(function(){
+        $("#main7").slideToggle("slow");
+    });
+});
+
+//        function show(){
+//            document.getElementById("main7").style.opacity="1";
+//        }
     function li1(){
         document.getElementById("one").style.display="block";
         document.getElementById("two").style.display="none";
         document.getElementById("three").style.display="none";
         document.getElementById("sive").style.display="none";
-        document.getElementById("main7").style.opacity="0";
+//        document.getElementById("main7").style.opacity="0";
     }
     function li2(){
         document.getElementById("two").style.display="block";
         document.getElementById("one").style.display="none";
         document.getElementById("three").style.display="none";
         document.getElementById("sive").style.display="none";
-        document.getElementById("main7").style.opacity="0";
+//        document.getElementById("main7").style.opacity="0";
     }
     function li3(){
         document.getElementById("three").style.display="block";
         document.getElementById("one").style.display="none";
         document.getElementById("two").style.display="none";
         document.getElementById("sive").style.display="none";
-        document.getElementById("main7").style.opacity="0";
+//        document.getElementById("main7").style.opacity="0";
     }
     function li4(){
         document.getElementById("sive").style.display="block";
         document.getElementById("one").style.display="none";
         document.getElementById("two").style.display="none";
         document.getElementById("three").style.display="none";
-        document.getElementById("main7").style.opacity="0";
+//        document.getElementById("main7").style.opacity="0";
     }
 $(function(){
     $("#l1").click(function(){
@@ -259,8 +265,6 @@ $(function(){
             $("#l3").removeClass("active");
         })
     });
-
-
 </script>
 </body>
 </html>
